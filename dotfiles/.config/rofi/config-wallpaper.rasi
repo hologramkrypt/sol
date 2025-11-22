@@ -21,7 +21,7 @@ configuration {
 
 window {
     background-color: rgba(0,0,0,0.3);
-    border: 2px;
+    border: 0px;
     border-color: @border-color;
     border-radius: 12px;
     width: 90%;
@@ -52,7 +52,7 @@ element {
     orientation: vertical;
     spacing: 2px;
     padding: 5px;
-    border-radius: 8px;
+    border-radius: 2px;
     background-color: transparent; 
     cursor: pointer;
     width: 150px;
@@ -67,7 +67,7 @@ element normal.normal {
 element selected.normal {
     background-color: rgba (0,0,0,0.5); 
     text-color: @selected-normal-foreground;
-    border: 2px;
+    border: 0px;
     border-color: @border-color;
 }
 
