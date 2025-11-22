@@ -9,7 +9,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "pyright", "markdown_oxide" }
+                ensure_installed = { "lua_ls", "markdown_oxide" }
             })
         end
     },

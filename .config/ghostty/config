@@ -7,7 +7,7 @@ window-decoration = true
 window-padding-x = 25
 window-padding-y = 25
 font-family = Hack
-font-size = 16.0
+font-size = 14.0
 background-opacity = 0.5
 background-blur = 3
 
@@ -21,3 +21,4 @@ copy-on-select = true
 confirm-close-surface=false
 resize-overlay = never
 mouse-hide-while-typing = true
+

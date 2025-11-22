@@ -10,8 +10,8 @@
 	"format-alt-click": "click",
 	"interval": 3600,
 	"return-type": "json",
-	"exec": "$HOME/.config/hypr/UserScripts/Weather.py",
-	//"exec": "$HOME/.config/hypr/UserScripts/Weather.sh",
+	"exec": "$HOME/.config/hypr/scripts/Weather.py",
+	//"exec": "$HOME/.config/hypr/scripts/Weather.sh",
 	//"exec-if": "ping wttr.in -c1",
 	"tooltip": true,
 },
@@ -25,14 +25,14 @@
 
 "custom/file_manager": {
 	"format": " ",
-	"on-click": "dolphin",
+	"on-click": "$HOME/.config/hypr/scripts/WaybarScripts.sh --files",
 	"tooltip": true,
 	"tooltip-format": "File Manager",
 },
 
 "custom/tty": {
 	"format": " ",
-	"on-click": "ghostty",
+	"on-click": "$HOME/.config/hypr/scripts/WaybarScripts.sh --term",
 	"tooltip": true,
 	"tooltip-format": "Launch Terminal",
 },
@@ -47,9 +47,9 @@
 "custom/cycle_wall": {
 	"format": " ",
 	"on-click": "$HOME/.config/hypr/scripts/WallpaperSelect.sh",
-	"on-click-right": "$HOME/.config/hypr/scripts/WallpaperEffects.sh",
+	"on-click-middle": "$HOME/.config/hypr/scripts/WaybarStyles.sh",
 	"tooltip": true,
-	"tooltip-format": "Left Click: Wallpaper Menu\nMiddle Click: Random wallpaper\nRight Click: Waybar Styles Menu",
+	"tooltip-format": "Left Click: Wallpaper Menu\nRight Click: Waybar Styles Menu",
 },
 
 "custom/hint": {
@@ -79,6 +79,15 @@
 	"on-click": "$HOME/.config/hypr/scripts/SwitchKeyboardLayout.sh",
 },
 
+"custom/light_dark": {
+	"format": "󰔎 ",
+	"on-click": "$HOME/.config/hypr/scripts/DarkLight.sh",
+	"on-click-right": "$HOME/.config/hypr/scripts/WaybarStyles.sh",
+	"on-click-middle": "$HOME/.config/hypr/scripts/WallpaperSelect.sh",
+	"tooltip": true,
+	"tooltip-format": "Left Click: Switch Dark-Light Themes\nMiddle Click: Wallpaper Menu\nRight Click: Waybar Styles Menu",
+},
+
 "custom/lock": {
 	"format": "󰌾",
 	"on-click": "$HOME/.config/hypr/scripts/LockScreen.sh",
@@ -89,7 +98,7 @@
 "custom/menu": {
 	"format": "  ",
 	"on-click": "pkill rofi || rofi -show drun -modi run,drun,filebrowser,window",
-	"on-click-middle": "$HOME/.config/hypr/UserScripts/WallpaperSelect.sh",
+	"on-click-middle": "$HOME/.config/hypr/scripts/WallpaperSelect.sh",
 	"on-click-right": "$HOME/.config/hypr/scripts/WaybarLayout.sh",
 	"tooltip": true,
 	"tooltip-format": "Left Click: Rofi Menu\nMiddle Click: Wallpaper Menu\nRight Click: Waybar Layout Menu",
@@ -115,12 +124,8 @@
 },
 
 "custom/power": {
-	"format": " ⏻ ",
-	"on-click": "$HOME/.config/hypr/scripts/Wlogout.sh",
-	"on-click-right": "$HOME/.config/hypr/scripts/ChangeBlur.sh",
-	"tooltip": true,
-	"tooltip-format": "Left Click: Logout Menu\nRight Click: Change Blur",
-},
+	"format": " ⏻  ",
+	"on-click": "$HOME/.config/rofi/scripts/Powermenu.sh",
 
 "custom/reboot": {
     "format": "󰜉",
@@ -247,5 +252,6 @@
 "custom/arrow10": {
 	"format": "",
 	"tooltip": false
+},
 }
 }
